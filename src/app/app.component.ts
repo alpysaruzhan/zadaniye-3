@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'anghom';
+  public fir1 = false;
+  public fir3 = false;
+  public fir5 = false;
+  fir(){
+    setTimeout(() => {
+      this.fir1 = true
+    }, 500)
+  }
+  fir2(){
+    setTimeout(() => {
+      this.fir3 = true
+    }, 500)
+  }
+  fir4(){
+    setTimeout(() => {
+      this.fir5 = true
+    }, 500)
+  }
 }
